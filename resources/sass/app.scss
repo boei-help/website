@@ -1,0 +1,251 @@
+
+$jumbotron-bg: #ffffff;
+
+$primary: #713EEC;
+$body-bg: #ffffff;
+$body-color: #646c9a;
+$navbar-background-color: #ffffff;
+$navbar-text-color: #646c9a;
+$navbar-brand-color: #646c9a;
+$navbar-text-highlight-color: $primary;
+$table-accent-bg: #ffffff;
+$green: #33BA87;
+$red: #F9397A;
+$white: #ffffff;
+$font-size-base: 1rem;
+$font-family-base: "Poppins",-apple-system,Helvetica,sans-serif;
+$input-border-color: #e2e5ec;
+$navbar-light-color: $navbar-text-color;
+$navbar-light-active-color: $navbar-text-highlight-color;
+$navbar-light-hover-color: $navbar-text-highlight-color;
+$navbar-nav-link-padding-x: .8rem;
+$dropdown-link-hover-bg: #f9f9f9;
+$dropdown-link-hover-color: $primary;
+$dropdown-item-padding-y: 0.7rem;
+$dropdown-link-color: #495057;
+$text-on-white: #646c9a;
+$badge-font-size: 90%;
+$badge-font-weight: 400;
+$popover-font-size: $font-size-base; /*Regular size for popover*/
+$popover-header-padding-y: 1.3rem; // body is based on header
+$popover-header-padding-x: 2rem;
+$popover-max-width: 350px;
+$btn-border-radius: 3px;
+$btn-border-radius-lg: 3px;
+$btn-border-radius-sm: 3px;
+$card-border-color: #ebedf2;
+$small-font-size: 90%;
+$text-muted: #adb5bd;
+$alert-border-width: 0;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #ecf0f1 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #b4bcc2 !default;
+$gray-600: #95a5a6 !default;
+$gray-700: #7b8a8b !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #2C3E50 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #E74C3C !default;
+$orange:  #fd7e14 !default;
+$yellow:  #F39C12 !default;
+$green:   #18BC9C !default;
+$teal:    #20c997 !default;
+$cyan:    #3498DB !default;
+
+
+$secondary:     #000000 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-700 !default;
+
+
+// Links
+
+$link-color:                $primary !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
+
+$h1-font-size:                3.5rem !default;
+$h2-font-size:                2.5rem !default;
+$h3-font-size:                2rem !default;
+
+// Tables
+
+$table-accent-bg:             $gray-200 !default;
+
+// Dropdowns
+
+$dropdown-link-color:               $gray-700 !default;
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $primary !default;
+
+// Navs
+
+$nav-link-padding-y:                .5rem !default !default;
+$nav-link-padding-x:                2rem !default;
+$nav-link-disabled-color:           $gray-600 !default !default;
+
+$nav-tabs-border-color:             $gray-200 !default;
+
+// Navbar
+
+$navbar-padding-y:                  1rem !default;
+
+$navbar-dark-color:                 $white !default;
+$navbar-dark-hover-color:           $success !default;
+
+// Pagination
+
+$pagination-color:                  $link-color !default;
+$pagination-bg:                     $white !default;
+$pagination-border-width:           1px !default;
+$pagination-border-color:           $gray-200 !default;
+
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               darken($success, 15%) !default;
+$pagination-hover-border-color:     transparent !default;
+
+$pagination-active-bg:              $pagination-hover-bg !default;
+$pagination-active-border-color:    transparent !default;
+
+$pagination-disabled-color:         $pagination-color !default;
+$pagination-disabled-bg:            darken($white, 5%) !default;
+$pagination-disabled-border-color:  $pagination-border-color;
+
+// Progress bars
+
+$progress-height:                   0.625rem !default;
+$progress-font-size:                0.625rem !default;
+
+// List group
+
+$list-group-hover-bg:               $gray-200 !default;
+
+$list-group-disabled-bg:            $gray-200 !default;
+
+// Close
+
+$close-color:                       $white !default;
+$close-text-shadow:                 none !default;
+
+
+
+
+
+@import "bootstrap/bootstrap.scss";
+
+
+// Adjust header on small screensize
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+}
+
+.penmarked {
+    background: linear-gradient(to top, yellow 50%, transparent 50%);
+}
+
+#demo_here {
+    position: fixed; right: 120px; bottom: 60px; z-index: 99999;
+}
+
+.jumbotron .btn, .btn-primary {
+    box-shadow: 0 2px 4px 0 rgba(136,144,195,0.2), 0 5px 15px 0 rgba(37,44,97,0.15);
+}
+
+nav.navbar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Poppins" !default;
+@import url($web-font-path);
+
+
+nav.navbar, section {
+    @extend .mx-auto;
+    max-width: 1100px;
+
+    @extend .px-4;
+    @extend .px-sm-5;
+}
+
+#features, #integrations, #installation {
+    p {
+        margin-top: 30px;
+    }
+    img {
+        height: 60px;
+        max-width: 150px;
+    }
+}
+
+#installation {
+    .card {
+        border: 0;
+    }
+}
+
+section {
+    margin-top: 90px;
+    padding-bottom: 90px;
+
+    h2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    h4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+#footer {
+    margin-top: 150px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #EDEEF3;
+    padding-bottom: 150px;
+    padding-top: 100px;
+
+    section {
+        margin-top: 0;
+    }
+}
+
+
+// to combine old js-validator used (couldnt find better new one) with bootstrap 4
+.has-success input, .has-success textarea, .has-success select {
+    @extend .is-valid;
+}
+
+.has-danger input, .has-danger textarea, .has-danger select {
+    @extend .is-invalid;
+}
